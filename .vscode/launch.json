@@ -5,7 +5,12 @@
       "type": "node",
       "request": "launch",
       "name": "Run JS File",
-      "program": "${workspaceFolder}/app.js"
+      "program": "${workspaceFolder}/.vscode/app.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }
