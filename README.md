@@ -1,6 +1,6 @@
 # VS-Code-Power-Usage
 
-# ✨ Emmet Abbreviations in VS Code
+# Task-1 Emmet Abbreviations in VS Code -
 
 Emmet is a powerful tool built into VS Code that helps you **write HTML and CSS faster** using short expressions (abbreviations) that expand into full code.
 
@@ -32,7 +32,7 @@ Emmet is a powerful tool built into VS Code that helps you **write HTML and CSS 
 
 
 
-# 📝 User Snippet – HTML Boilerplate in VS Code
+# Task-2: User Snippet – HTML Boilerplate in VS Code - 
 
 ## 🔍 What is a User Snippet?
 A **user snippet** in VS Code is a reusable block of code you can trigger with a short keyword.  
@@ -102,7 +102,9 @@ Instead of typing the same boilerplate again and again, you just type a small pr
 - Understood how to create and use a snippet in VS Code.  
 - Practiced boosting productivity with custom boilerplate code.
 
-# 🐞 Walkthrough: Basic JavaScript Debugging in VS Code
+---
+
+# Task-3: Basic JavaScript Debugging in VS Code -
 
 ## 🔍 What is Debugging?
 Debugging is the process of **finding and fixing errors (bugs)** in your code.  
@@ -138,11 +140,17 @@ In VS Code, you can run JavaScript step by step, check variable values, and paus
     {
       "type": "node",
       "request": "launch",
-      "name": "Run JavaScript File",
-      "program": "${file}"
+      "name": "Run JS File",
+      "program": "${workspaceFolder}/.vscode/app.js",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
     }
   ]
 }
+
 ```
 
 
